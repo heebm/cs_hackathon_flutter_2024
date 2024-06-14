@@ -1,16 +1,13 @@
-# cs_hackathon_flutter_2024
+# CS Hackathon 2024 - Exercise 1
+In this exercise, we'll try to use Stateless widgets, both Basic and Layout widgets.
 
-A new Flutter project.
+**It is recommended to use online sources!**
 
-## Getting Started
+## Tasks
+In `lib/main_screen.dart`, add the necessary code such that:
+
+* A _rectangle button_ is added below the text.
+* The button should contain the _text_ "My Button".
+* Both the text and the button are _centered_ (middle of the screen).
 
 This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
