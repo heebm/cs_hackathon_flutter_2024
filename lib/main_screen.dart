@@ -9,7 +9,25 @@ class MainScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Main Screen"),
       ),
-      body: const Text("Hello Flutter"),
+      // Center horizontally the text and button
+      body: Center(
+        // Order the text and button vertically one above the other
+        child: Column(
+          // Center vertically the text and button
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text("Hello Flutter"),
+            // Add the button
+            ElevatedButton(
+              // Required parameter for what code to execute when button is pressed.
+              // We set it here to an empty function.
+              onPressed: () {},
+              // Button text is set to My Button
+              child: const Text("My Button"),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
