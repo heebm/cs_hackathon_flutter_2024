@@ -11,3 +11,6 @@ In `lib/main_screen.dart`, add the necessary code such that:
 * Both the text and the button are _centered_ (middle of the screen).
 
 This project is a starting point for a Flutter application.
+
+## Useful Information
+* Check out Flutter's [widget catalog](https://docs.flutter.dev/ui/widgets), mainly the "Basics" and "Layout" categories.
