@@ -1,16 +1,16 @@
-# cs_hackathon_flutter_2024
+# CS Hackathon 2024 - Exercise 2
+In this exercise, we'll try to use different types of widgets to fix our little game.
 
-A new Flutter project.
+**It is recommended to use online sources!**
 
-## Getting Started
+## Tasks
+In `lib/egg_screen.dart`, add the necessary code such that:
 
-This project is a starting point for a Flutter application.
+* **Our game is fixed**. That is: Whenever the egg is tapped, the text which displays its current count and the image should reflect the actual `_count` value.
+* Increase the font size for the `_count` label.
+* Make the `_count` label **bold**.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Useful Information
+* Check out Flutter's [widget catalog](https://docs.flutter.dev/ui/widgets), mainly the "Basics" and "Layout" categories.
+* Investigate the TextStyle constructor with **Ctrl + Space**.
+* If you want to change the type of an existing widget, try to press **Alt + Enter** while your cursor is on the widget's name, and see what Studio allows you to do easily.
