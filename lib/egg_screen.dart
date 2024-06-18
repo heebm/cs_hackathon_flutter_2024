@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
-class EggScreen extends StatelessWidget {
+// Use Stateful Widget rather than Stateless
+class EggScreen extends StatefulWidget {
+  @override
+  State<EggScreen> createState() => _EggScreenState();
+}
+
+class _EggScreenState extends State<EggScreen> {
   int _count = 0;
 
   @override
@@ -16,14 +22,20 @@ class EggScreen extends StatelessWidget {
             GestureDetector(
               child: loadEggImage(),
               onTap: () {
-                _count++;
+                // Wrap the state changes with setState to make it re-render the screen.
+                setState(() {
+                  _count++;
+                });
                 debugPrint('Tapped $_count!');
               },
             ),
             Text(
               "$_count Clicks",
               style: const TextStyle(
-                fontSize: 30,
+                // Increased font size
+                fontSize: 50,
+                // Made the text bold
+                fontWeight: FontWeight.bold,
               ),
             ),
           ],
