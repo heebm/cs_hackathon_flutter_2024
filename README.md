@@ -14,3 +14,4 @@ In `lib/egg_screen.dart`, add the necessary code such that:
 * Check out Flutter's [widget catalog](https://docs.flutter.dev/ui/widgets), mainly the "Basics" and "Layout" categories.
 * Investigate the TextStyle constructor with **Ctrl + Space**.
 * If you want to change the type of an existing widget, try to press **Alt + Enter** while your cursor is on the widget's name, and see what Studio allows you to do easily.
+* Note that major changes in the app (such as widgets changing types) might require a full restart of the app and not just hot reload before you can see your changes.
