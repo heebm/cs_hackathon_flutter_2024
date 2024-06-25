@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
-class EggScreen extends StatelessWidget {
+class EggScreen extends StatefulWidget {
+  EggScreen({super.key});
+
+  @override
+  State<EggScreen> createState() => _EggScreenState();
+}
+
+class _EggScreenState extends State<EggScreen> {
   int _count = 0;
 
   @override
@@ -16,15 +23,28 @@ class EggScreen extends StatelessWidget {
             GestureDetector(
               child: loadEggImage(),
               onTap: () {
-                _count++;
+                setState(() {
+                  _count++;
+                });
                 debugPrint('Tapped $_count!');
               },
             ),
             Text(
               "$_count Clicks",
               style: const TextStyle(
-                fontSize: 30,
+                fontSize: 35,
+                fontWeight: FontWeight.bold,
               ),
+            ),
+            ElevatedButton.icon(
+              onPressed: () {
+                setState(() {
+                  _count = 0; // Resetting _count to 0
+                  debugPrint('Resetting...!'); 
+                });
+              },
+              icon: const Icon(Icons.refresh), // Icon to be displayed
+              label: const Text('Again!'), // Text to be displayed
             ),
           ],
         ),
